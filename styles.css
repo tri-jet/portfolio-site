@@ -1,7 +1,11 @@
 body{
-  align-content: center;
-  background-color: blue;
+  align: center;
+  background-color: #F8F0E3;
 }
 p{
-  color: green;
+  color: black;
+  padding: 25px;
+}
+h1{
+  padding: 100px;
 }
