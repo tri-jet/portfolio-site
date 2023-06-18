@@ -9,3 +9,4 @@ Eventually, this site will showcase various side projects I may have completed/a
 - Previous Professional Experience
 - Skills with icons 
 - Cover photo or professional images for "hero" image
+- Education Section?
