@@ -1,20 +1,162 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Trijit Saha Home</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <ul class = "navBar">
-  	<li class ="navItem"><a href=""> Home </a></li>
-  	<li class ="navItem"><a href=""> About </a></li>
-  	<li class ="navItem"><a href=""> Contact </a></li>
-   </ul>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <h1>Welcome, I'm Trijit Saha.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Trijit Saha</title>
+    <!-- Could include a current title of myself i.e.
+      Trijit Saha | Computer Science Student 
+    -->
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>TRIJIT SAHA</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+       <img
+        src="assets/images/oxford circus.jpg"
+        alt="temp placeholder"
+        loading="lazy"
+        class="hero-img"
+      /> 
+      <!-- Add a relevant image either of myself or something generic or collage
+      of professional photos at events etc. -->
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text"> <!-- 4 lines ish or 2 sentences-->
+          Hi, I'm Trijit Saha - a 2nd Year Computer Science Student at the University
+          of Nottingham.
+          
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
+      </div>
+</section>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+    </section>
+
+    <!-- Skills section -->
+	<section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Projects section -->
+
+    <!-- Contact section -->
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <!-- Scroll to top -->
+
+    <!-- Footer section -->
+
+    <!-- Website scripts -->
+    <script src="assets/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
