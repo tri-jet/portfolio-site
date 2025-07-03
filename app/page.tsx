@@ -2,9 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex flex-col">
-        <div className="flex flex-col items-center mb-12">
+    <main className="min-h-screen flex flex-col items-center bg-transparent">
+      {/* Central content area, 3/5 width, centered */}
+      <div className="w-3/5 mx-auto font-mono text-sm">
+        {/* Profile Section */}
+        <div className="flex flex-col items-center mt-12 mb-12">
           <Image
             src="https://via.placeholder.com/150"
             alt="Pic w/ personality"
@@ -12,13 +14,15 @@ export default function Home() {
             height={150}
             className="rounded-full mb-4"
           />
-          <p className="text-center">
+          <p className="text-center max-w-md">
             Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-          <div className="md:col-span-2">
+        {/* Two-Column Section */}
+        <div className="flex flex-row gap-x-12 w-full">
+          {/* Left Column: Work Experience & Projects */}
+          <div className="w-2/3">
             <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
             <div className="mb-8">
               <h3 className="text-xl font-semibold">Role 1 @ Company - Dates</h3>
@@ -45,7 +49,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          {/* Right Column: Blog */}
+          <div className="w-1/3">
             <h2 className="text-2xl font-bold mb-4">Blog</h2>
             <div className="mb-4">
               <h3 className="text-lg font-semibold">Blog Post title 3 - Date</h3>
