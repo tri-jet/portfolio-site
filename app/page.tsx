@@ -14,9 +14,11 @@ export default function Home() {
             height={150}
             className="rounded-full mb-4"
           />
-          <p className="text-center max-w-md">
-            Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
-          </p>
+          <div className="w-[300px] text-center">
+            <p>
+              Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
+            </p>
+          </div>
         </div>
 
         {/* Two-Column Section */}
