@@ -35,8 +35,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Additions
+## To-Dos
 - Footer w/ social media links
 - picture w/ personality 
 - project + job detail stuff
 - background image/pattern
+
+- Add component for job/project description, or tools/skills list
+- Component for blog post preview
+- Component/format of each blog.
