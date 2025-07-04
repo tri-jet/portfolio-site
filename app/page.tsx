@@ -29,25 +29,38 @@ export default function Home() {
             <div className="mb-8">
               <h3 className="text-xl font-semibold">Role 1 @ Company - Dates</h3>
               <p>built X to do Y</p>
-              <ul className="list-disc list-inside ml-4">
-                <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
-                <li>other sub features</li>
-              </ul>
+              <p>- sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</p>
+              <p>- other sub features</p>
               <p className="text-sm text-gray-400 mt-2">React, TypeScript, GraphQL, AWS</p>
             </div>
-            <div>
+            <div className="mb-8">
               <h3 className="text-xl font-semibold">Role 2 @ Company - Dates</h3>
               <p>built X to do Y</p>
-              <ul className="list-disc list-inside ml-4">
-                <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
-                <li>other sub features</li>
-              </ul>
+              <p>- sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</p>
+              <p>- other sub features</p>
               <p className="text-sm text-gray-400 mt-2">React, TypeScript, GraphQL, AWS</p>
             </div>
 
             <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
-            <div>
-              <h3 className="text-xl font-semibold">&lt;icon/emoji&gt; Project 1 name - Dates</h3>
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold">🚀 Project 1 name - Dates</h3>
+              <p>- 1 line project desc. inc. use case scenario</p>
+              <p>- features developed, for which product purpose</p>
+              <p>- non-technical activities – e.g. user convos, React, TypeScript, FastAPI, GraphQL, Serverless AWS</p>
+              <p>- &lt;Github and/or Live link&gt;</p>
+              <div className="w-full flex justify-center my-4">
+                <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
+              </div>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold">🤖 Project 2 name - Dates</h3>
+              <p>- 1 line project desc. inc. use case scenario</p>
+              <p>- features developed, for which product purpose</p>
+              <p>- non-technical activities – e.g. user convos, Python, OpenAI LLMs, Web Scraping</p>
+              <p>- &lt;Github and/or Live link&gt;</p>
+              <div className="w-full flex justify-center my-4">
+                <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
+              </div>
             </div>
           </div>
 
