@@ -1,10 +1,12 @@
+@import "tailwindcss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-color: #1a1a1a; 
+  --background-color: #f0b22d; 
 }
 
 body {
