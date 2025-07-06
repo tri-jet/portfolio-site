@@ -8,17 +8,18 @@ export default function Home() {
         {/* Profile Section */}
         <div className="flex flex-col items-center mt-12 mb-12">
           <Image
-            src="https://via.placeholder.com/150"
+            src="https://placehold.co/450x300/png"
             alt="Pic w/ personality"
-            width={150}
-            height={150}
-            className="rounded-full mb-4"
+            width={450}
+            height={300}
+            className="rounded-[30px] mb-4"
           />
           <div className="w-[300px] text-center">
             <p>
               Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
             </p>
           </div>
+          <div className="px-20 bg-red-500 text-white">Should have 80px padding left/right</div>
         </div>
 
         {/* Two-Column Section */}
@@ -33,7 +34,11 @@ export default function Home() {
                 <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
                 <li>other sub features</li>
               </ul>
-              <p className="text-sm text-gray-400 mt-2">React, TypeScript, GraphQL, AWS</p>
+              <div className="flex flex-wrap gap-3 my-3">
+                <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">React Native</span>
+                <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">Postgres</span>
+                <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">TypeScript</span>
+              </div>
             </div>
             <div>
               <h3 className="text-xl font-semibold">Role 2 @ Company - Dates</h3>
@@ -42,7 +47,12 @@ export default function Home() {
                 <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
                 <li>other sub features</li>
               </ul>
-              <p className="text-sm text-gray-400 mt-2">React, TypeScript, GraphQL, AWS</p>
+              <div className="my-2 opacity-50 flex flex-wrap space-x-4 gap-y-2 transition-all hover:opacity-100 cursor-pointer">
+                <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">React</span>
+                <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">TypeScript</span>
+                <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">GraphQL</span>
+                <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">AWS</span>
+              </div>
             </div>
 
             <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
@@ -51,7 +61,13 @@ export default function Home() {
               <p>- 1 line project desc. inc. use case scenario</p>
               <p>- features developed, for which product purpose</p>
               <p>- non-technical activities – e.g. user convos</p>
-              <p className="text-sm text-gray-400 mt-2">React, TypeScript, FastAPI, GraphQL, Serverless AWS</p>
+              <div className="flex flex-wrap gap-2 my-2">
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">React</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">TypeScript</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">FastAPI</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">GraphQL</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Serverless AWS</span>
+              </div>
               <p>- &lt;Github and/or Live link&gt;</p>
               <div className="w-full flex justify-center my-4">
                 <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
@@ -62,7 +78,21 @@ export default function Home() {
               <p>- 1 line project desc. inc. use case scenario</p>
               <p>- features developed, for which product purpose</p>
               <p>- non-technical activities – e.g. user convos</p>
-              <p className="text-sm text-gray-400 mt-2">Python, OpenAI LLMs, Web Scraping</p>
+              <div className="flex flex-wrap gap-2 my-2">
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Python</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
+                <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-2 bg-red-500">
+                <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">react native</span>
+                <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">postgres</span>
+                <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">typescript</span>
+              </div>
+
+              <div className ="text-purple-600">
+                <p>test</p>
+              </div>
+
               <p>- &lt;Github and/or Live link&gt;</p>
               <div className="w-full flex justify-center my-4">
                 <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
@@ -84,6 +114,13 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold">Blog Post title 1 - Date</h3>
               <p>Subline + cut off preview of start</p>
+            </div>
+
+            { /* Test styles for pill boxes */}
+            <div>
+              <span className="rounded-full border border-gray-500 bg-white/10 px-3 py-1 text-xs text-gray-100 px-3">pill box 1</span>
+              <span className="rounded-full border border-gray-500 bg-white/10 px-3 py-1 text-xs text-gray-100 px-[30px]">pill box 2</span>
+              <span className="rounded-full border border-gray-500 bg-white/10 px-3 py-1 text-xs text-gray-100 px-20">pill box 3</span>
             </div>
           </div>
         </div>
