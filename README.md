@@ -39,8 +39,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Footer w/ social media links
 - picture w/ personality 
 - project + job detail stuff
-- background image/pattern
+- Scale/Responsive design for smaller screens - 2 cols don't exactly fit Rome: Total War style- just move blog underneath?
+- dark mode styling 
+- Add other tidbits? like education, basic personality/interests if wanted
 
 - Add component for job/project description, or tools/skills list
 - Component for blog post preview
 - Component/format of each blog.
+
+- [x] background image/pattern
