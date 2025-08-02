@@ -20,7 +20,6 @@ export default function Home() {
                 Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
               </p>
             </div>
-            <div className="px-20 bg-red-500 text-white">Should have 80px padding left/right</div>
           </div>
 
           {/* Two-Column Section */}
@@ -54,6 +53,18 @@ export default function Home() {
                   <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">GraphQL</span>
                   <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">AWS</span>
                 </div>
+
+                <div className="flex flex-wrap gap-2 my-2">
+                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Python</span>
+                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
+                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
+                </div>
+
+                <div className="flex flex-wrap gap-2 my-2">
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Python</span>
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
+                </div>
               </div>
 
               <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
@@ -84,14 +95,14 @@ export default function Home() {
                   <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
                   <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
                 </div>
-                <div className="flex flex-wrap gap-2 mt-2 bg-red-500">
-                  <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">react native</span>
-                  <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">postgres</span>
-                  <span className="rounded-full border border-gray-500 bg-white/10 mx-[5px] px-[2px] py-1 text-xs text-gray-100">typescript</span>
-                </div>
 
                 <div className ="text-purple-600">
                   <p>test</p>
+                </div>
+                <div className="flex flex-wrap gap-2 my-2">
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Python</span>
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
+                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
                 </div>
 
                 <p>- &lt;Github and/or Live link&gt;</p>
