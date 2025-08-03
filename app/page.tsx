@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SkillPill, {SkillPills} from './components/SkillPills';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Test this main text colour rgb(71 85 105/var(--tw-text-opacity))*/}
           {/* Two-Column Section */}
           <div className="flex flex-row gap-x-12 w-full justify-between">
             {/* Left Column: Work Experience & Projects */}
@@ -34,11 +36,7 @@ export default function Home() {
                   <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
                   <li>other sub features</li>
                 </ul>
-                <div className="flex flex-wrap gap-3 my-3">
-                  <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">React Native</span>
-                  <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">Postgres</span>
-                  <span className="bg-gray-200 text-gray-800 rounded-lg px-4 py-2 text-sm font-medium shadow-md gap-2">TypeScript</span>
-                </div>
+                <SkillPills skills={['React', 'TypeScript','AWS']}/>
               </div>
               <div>
                 <h3 className="text-xl font-semibold">Role 2 @ Company - Dates</h3>
@@ -47,24 +45,8 @@ export default function Home() {
                   <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
                   <li>other sub features</li>
                 </ul>
-                <div className="my-2 opacity-50 flex flex-wrap space-x-4 gap-y-2 transition-all hover:opacity-100 cursor-pointer">
-                  <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">React</span>
-                  <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">TypeScript</span>
-                  <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">GraphQL</span>
-                  <span className="mr-2 mb-2 border border-slate-800 rounded-full px-2 text-xs">AWS</span>
-                </div>
-
-                <div className="flex flex-wrap gap-2 my-2">
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Python</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
-                </div>
-
-                <div className="flex flex-wrap gap-2 my-2">
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Python</span>
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
-                </div>
+                
+                <SkillPills skills={['React', 'TypeScript', 'GraphQL', 'AWS']}/>
               </div>
 
               <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
@@ -73,13 +55,8 @@ export default function Home() {
                 <p>- 1 line project desc. inc. use case scenario</p>
                 <p>- features developed, for which product purpose</p>
                 <p>- non-technical activities – e.g. user convos</p>
-                <div className="flex flex-wrap gap-2 my-2">
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">React</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">TypeScript</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">FastAPI</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">GraphQL</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Serverless AWS</span>
-                </div>
+                <SkillPills skills={['React', 'TypeScript', 'FastAPI', 'GraphQL', 'Serverless AWS']}/>
+
                 <p>- &lt;Github and/or Live link&gt;</p>
                 <div className="w-full flex justify-center my-4">
                   <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
@@ -90,19 +67,11 @@ export default function Home() {
                 <p>- 1 line project desc. inc. use case scenario</p>
                 <p>- features developed, for which product purpose</p>
                 <p>- non-technical activities – e.g. user convos</p>
-                <div className="flex flex-wrap gap-2 my-2">
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Python</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
-                  <span className="bg-gray-700 text-white rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
-                </div>
+                
+                <SkillPills skills={['Python', 'OpenAI LLMs', 'Web Scraping']}/>
 
                 <div className ="text-purple-600">
                   <p>test</p>
-                </div>
-                <div className="flex flex-wrap gap-2 my-2">
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Python</span>
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">OpenAI LLMs</span>
-                  <span className="bg-white text-gray-700 rounded-full px-3 py-1 text-xs font-semibold">Web Scraping</span>
                 </div>
 
                 <p>- &lt;Github and/or Live link&gt;</p>
@@ -132,6 +101,8 @@ export default function Home() {
         </div>
     </main>
     </div>
+
+  
   );
 }
 
