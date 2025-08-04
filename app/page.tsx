@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SkillPill, {SkillPills} from './components/SkillPills';
+import {SkillPills} from './components/SkillPills';
 
 export default function Home() {
   return (

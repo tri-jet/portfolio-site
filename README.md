@@ -43,8 +43,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - dark mode styling 
 - Add other tidbits? like education, basic personality/interests if wanted
 
-- Add component for job/project description, or tools/skills list
+- Add component for job/project description?
+
+- Skills Icons/Logos in the section under blog since there's space.
+
+
 - Component for blog post preview
 - Component/format of each blog.
 
+- [x] component for tools/skills list
 - [x] background image/pattern
+
