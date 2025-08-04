@@ -31,4 +31,11 @@ jobs:
         run: npm run lint
 
       - name: Run Unit Tests (Optional, but recommended)
-        run: npm test # If you have tests, this will run them
+        run: |
+          # if any common test filenames exist, run tests; otherwise skip
+          if ls **/*.{test,spec}.{js,jsx,ts,tsx} 1> /dev/null 2>&1; then
+            echo "Test files detected, running npm test..."
+            npm test
+          else
+            echo "No test files found; skipping tests."
+          fi
