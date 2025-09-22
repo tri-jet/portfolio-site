@@ -3,7 +3,7 @@ import {SkillPills} from './components/SkillPills';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-100 via-pink-100 to-orange-200">
+    <div className="min-h-screen bg-gradient-to-r from-rose-100 to-teal-100">
     <main className="min-h-screen flex flex-col items-center bg-transparent">
         {/* Central content area, 3/5 width, centered */}
         <div className="w-3/5 mx-auto font-mono text-sm text-gray-900">
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
 
             {/* Right Column: Blog */}
-            <div className="w-1/3 ml-auto">
+            {/* <div className="w-1/3 ml-auto">
               <h2 className="text-2xl font-bold mb-4">Blog</h2>
               <div className="mb-4">
                 <h3 className="text-lg font-semibold">Blog Post title 3 - Date</h3>
@@ -96,7 +96,7 @@ export default function Home() {
                 <h3 className="text-lg font-semibold">Blog Post title 1 - Date</h3>
                 <p>Subline + cut off preview of start</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
     </main>
