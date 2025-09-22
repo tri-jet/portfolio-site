@@ -1,7 +1,12 @@
 import Image from "next/image";
 import {SkillPills} from './components/SkillPills';
+import { Card } from "./components/Card";
 
 export default function Home() {
+   const mediaPlaceholder = (
+    <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
+      [Project Demo/Video/Image]
+    </div>);
   return (
     <div className="min-h-screen bg-gradient-to-r from-rose-100 to-teal-100">
       <main className="min-h-screen flex flex-col items-center bg-transparent">
@@ -26,54 +31,25 @@ export default function Home() {
           {/* Work Experience Section */}
           <h2 className="text-2xl font-bold mt-12 mb-4">Work Experience</h2>
           <div className="flex flex-col gap-8 py-8">
-            {/* Work Experience 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">Digital Engineer @ Sonata Software 🎵</h3>
-                  <h4 className="text-md font-medium mb-2"> June 2025 - Present</h4>
-                  <p className="text-gray-700 mb-4">
-                    Currently working on AI proof of concept research, exploring generative and agentic AI use cases.
-                  </p>
-                  <ul className="list-disc list-inside text-gray-700 mb-4">
-                    {/* <li>Built new features for the cross-platform UI to enhance user experience.</li>
-                    <li>Collaborated with a dedicated team to maintain and improve robust microservices.</li> */}
-                  </ul>
-                  <SkillPills skills={['TypeScript', 'Python', 'React', 'Agentic AI']} />
-                </div>
-              </div>
-            </div>
+            <Card
+              title="Digital Engineer @ Sonata Software 🎵"
+              subtitle="June 2025 - Present"
+              lines={[
+                "Currently working on AI proof of concept research, exploring generative and agentic AI use cases."
+              ]}
+              skills={['TypeScript', 'Python', 'React', 'Agentic AI']}
+            />
+            <Card
+              title="London Accelerator Engineer @ SumUp 💰"
+              subtitle="March - May 2025"
+              bulletPoints={[
+                "Co-developed a bill splitting web app with £2k processed in its first week.",
+                "Built GraphQL endpoints and connected to a clean UI with Next.js & Tailwind.",
+                "Presented weekly demos to clients and iterated quickly based on feedback."
+              ]}
+              skills={['TypeScript', 'React', 'AWS Lambda', 'NextJS', 'Tailwind','GraphQL', 'Node.js']}
+            />
             
-            {/* Work Experience 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">London Accelerator Engineer @ SumUp 💰</h3>
-                  <h4 className="text-md font-medium mb-2"> March - May 2025</h4>
-                  <p className="text-gray-700 mb-4">
-                    
-                    
-                    
-
-                  </p>
-                  <ul className="text-gray-700 mb-4">
-                    <li className="flex items-start">
-                      <span className="flex-shrink-0 mr-2">&#8226;</span>
-                      <span>Co-developed a bill splitting web app with £2k processed in its first week.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="flex-shrink-0 mr-2">&#8226;</span>
-                      <span>Built GraphQL endpoints and connected to a clean UI with Next.js & Tailwind.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="flex-shrink-0 mr-2">&#8226;</span>
-                      <span>Presented weekly demos to clients and iterated quickly based on feedback.</span>
-                    </li>
-                  </ul>
-                  <SkillPills skills={['TypeScript', 'React', 'AWS Lambda', 'NextJS', 'Tailwind','GraphQL']} />
-                </div>
-              </div>
-            </div>
           </div>
 
           <hr className="my-12 border-t-2 border-gray-300" />
@@ -81,71 +57,42 @@ export default function Home() {
           {/* Projects Section - Aligned with Profile */}
           <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
           <div className="flex flex-col gap-8 py-8">
-            {/* Project 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">🚀 Project 1 name - Dates</h3>
-                  <p className="text-gray-700 mb-4">
-                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
-                  </p>
-                  <SkillPills skills={['React', 'TypeScript', 'FastAPI', 'GraphQL', 'Serverless AWS']} />
-                  <div className="mt-4 text-gray-600">
-                    <a href="#" className="underline mr-4">GitHub Link</a>
-                    <a href="#" className="underline">Live Demo</a>
-                  </div>
-                </div>
-                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
-                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
-                    [Project Demo/Video/Image]
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Project 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">🤖 Project 2 name - Dates</h3>
-                  <p className="text-gray-700 mb-4">
-                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
-                  </p>
-                  <SkillPills skills={['Python', 'OpenAI LLMs', 'Web Scraping']} />
-                  <div className="mt-4 text-gray-600">
-                    <a href="#" className="underline mr-4">GitHub Link</a>
-                    <a href="#" className="underline">Live Demo</a>
-                  </div>
-                </div>
-                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
-                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
-                    [Project Demo/Video/Image]
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Card 
+              title="Nando's Map 🐔 🗺"
+              subtitle="July 2025 - Present"
+              lines={["Building a social, gamified web app for tracking visits to Nando’s restaurants."]}
+              bulletPoints={[
+                "Implemented authentication, persistence, region selection and check-off features with CI/CD.",
+                "Roadmap: interactive maps, leaderboards, photo uploads, and “Spotify Wrapped”-style insights."
+              ]}
+              skills={['Next.js', 'TypeScript', 'FastAPI', 'Shadcn UI', 'Tailwind', 'Supabase', 'Vercel', 'Render']}
+              githubLink="#"
+              liveLink="#"
+              media={mediaPlaceholder}
+            />
 
-            {/* Project 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <div className="flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-2">✨ Project 3 name - Dates</h3>
-                  <p className="text-gray-700 mb-4">
-                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
-                  </p>
-                  <SkillPills skills={['Node.js', 'Express.js', 'PostgreSQL']} />
-                  <div className="mt-4 text-gray-600">
-                    <a href="#" className="underline mr-4">GitHub Link</a>
-                    <a href="#" className="underline">Live Demo</a>
-                  </div>
-                </div>
-                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
-                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
-                    [Project Demo/Video/Image]
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Card 
+              title="Anki Chatbot 📝 🤖"
+              subtitle="January 2025"
+
+              bulletPoints={["Created a RAG chatbot in Python that provides contextually relevant answers about the Anki flashcard tool.",
+                "Scraped and indexed documentation to create a vector database with embeddings, enabling use of cosine similarity to retrieve context relevant to the question.",
+                "Leveraged the context with OpenAI's chat completion model using prompt engineering for context-aware answer generation."]}              
+              skills={['Python', 'OpenAI LLMs', 'Web Scraping']}
+              // githubLink="#"
+              // liveLink="#"
+              media={mediaPlaceholder}
+            />
+
+            <Card
+              title="Reversi/Othello Game ♟️"
+              subtitle="April 2022"
+              bulletPoints={[
+                "Game built with MVC architecture in Java, with GUI made in Java Swing, allowing for 2 players to play on separate windows.",
+                "Greedy AI button to make the most optimal move at any time, for the most points gain."
+              ]}
+              skills={['Java', 'Java Swing', 'MVC Architecture']}
+            />
           </div>
         </div>
       </main>
