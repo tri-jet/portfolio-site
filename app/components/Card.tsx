@@ -9,7 +9,6 @@ export interface CardProps {
   githubLink?: string;
   liveLink?: string;
   media?: React.ReactNode;
-  hasMediaPlaceholder?: boolean;
 }
 
 export const Card = ({
@@ -21,7 +20,6 @@ export const Card = ({
   githubLink,
   liveLink,
   media,
-  hasMediaPlaceholder = false
 }: CardProps) => {
 
 
