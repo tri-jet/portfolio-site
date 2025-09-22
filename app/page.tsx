@@ -23,7 +23,7 @@ export default function Home() {
             />
             <div className="w-[300px] text-center text-gray-900">
               <p>
-                Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
+                Hi I&apos;m Trijit, a product-minded software engineer passionate about designing and building meaningful, user-focused applications that solve real problems.
               </p>
               <SocialLinks />
             </div>
