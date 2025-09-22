@@ -1,6 +1,6 @@
 import Image from "next/image";
-import {SkillPills} from './components/SkillPills';
 import { Card } from "./components/Card";
+import { SocialLinks } from "./components/SocialLinks";
 
 export default function Home() {
    const mediaPlaceholder = (
@@ -25,6 +25,7 @@ export default function Home() {
               <p>
                 Hi I&apos;m Trijit, an SE passionate about building meaningful and useful products etc. Maybe some prod engineer stuff.
               </p>
+              <SocialLinks />
             </div>
           </div>
           
