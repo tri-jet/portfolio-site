@@ -4,9 +4,9 @@ import {SkillPills} from './components/SkillPills';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-rose-100 to-teal-100">
-    <main className="min-h-screen flex flex-col items-center bg-transparent">
+      <main className="min-h-screen flex flex-col items-center bg-transparent">
         {/* Central content area, 3/5 width, centered */}
-        <div className="w-3/5 mx-auto font-mono text-sm text-gray-900">
+        <div className="w-3/5 mx-auto text-sm text-gray-900">
           {/* Profile Section */}
           <div className="flex flex-col items-center mt-12 mb-12">
             <Image
@@ -22,87 +22,133 @@ export default function Home() {
               </p>
             </div>
           </div>
-
-          {/* Test this main text colour rgb(71 85 105/var(--tw-text-opacity))*/}
-          {/* Two-Column Section */}
-          <div className="flex flex-row gap-x-12 w-full justify-between">
-            {/* Left Column: Work Experience & Projects */}
-            <div className="max-w-1/2 w-2/3 pr-8" style={{maxWidth: '50%'}}>
-              <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold">Role 1 @ Company - Dates</h3>
-                <p>built X to do Y</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
-                  <li>other sub features</li>
-                </ul>
-                <SkillPills skills={['React', 'TypeScript','AWS']}/>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold">Role 2 @ Company - Dates</h3>
-                <p>built X to do Y</p>
-                <ul className="list-disc list-inside ml-4">
-                  <li>sub-features built - e.g. built A for &lt;purpose&gt; for Z product aim</li>
-                  <li>other sub features</li>
-                </ul>
-                
-                <SkillPills skills={['React', 'TypeScript', 'GraphQL', 'AWS']}/>
-              </div>
-
-              <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold">🚀 Project 1 name - Dates</h3>
-                <p>- 1 line project desc. inc. use case scenario</p>
-                <p>- features developed, for which product purpose</p>
-                <p>- non-technical activities – e.g. user convos</p>
-                <SkillPills skills={['React', 'TypeScript', 'FastAPI', 'GraphQL', 'Serverless AWS']}/>
-
-                <p>- &lt;Github and/or Live link&gt;</p>
-                <div className="w-full flex justify-center my-4">
-                  <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
+          
+          {/* Work Experience Section */}
+          <h2 className="text-2xl font-bold mt-12 mb-4">Work Experience</h2>
+          <div className="flex flex-col gap-8 py-8">
+            {/* Work Experience 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-2">Digital Engineer @ Sonata Software 🎵</h3>
+                  <h4 className="text-md font-medium mb-2"> June 2025 - Present</h4>
+                  <p className="text-gray-700 mb-4">
+                    Currently working on AI proof of concept research, exploring generative and agentic AI use cases.
+                  </p>
+                  <ul className="list-disc list-inside text-gray-700 mb-4">
+                    {/* <li>Built new features for the cross-platform UI to enhance user experience.</li>
+                    <li>Collaborated with a dedicated team to maintain and improve robust microservices.</li> */}
+                  </ul>
+                  <SkillPills skills={['TypeScript', 'Python', 'React', 'Agentic AI']} />
                 </div>
               </div>
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold">🤖 Project 2 name - Dates</h3>
-                <p>- 1 line project desc. inc. use case scenario</p>
-                <p>- features developed, for which product purpose</p>
-                <p>- non-technical activities – e.g. user convos</p>
-                
-                <SkillPills skills={['Python', 'OpenAI LLMs', 'Web Scraping']}/>
+            </div>
+            
+            {/* Work Experience 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-2">London Accelerator Engineer @ SumUp 💰</h3>
+                  <h4 className="text-md font-medium mb-2"> March - May 2025</h4>
+                  <p className="text-gray-700 mb-4">
+                    
+                    
+                    
 
-                <div className ="text-purple-600">
-                  <p>test</p>
+                  </p>
+                  <ul className="text-gray-700 mb-4">
+                    <li className="flex items-start">
+                      <span className="flex-shrink-0 mr-2">&#8226;</span>
+                      <span>Co-developed a bill splitting web app with £2k processed in its first week.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="flex-shrink-0 mr-2">&#8226;</span>
+                      <span>Built GraphQL endpoints and connected to a clean UI with Next.js & Tailwind.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="flex-shrink-0 mr-2">&#8226;</span>
+                      <span>Presented weekly demos to clients and iterated quickly based on feedback.</span>
+                    </li>
+                  </ul>
+                  <SkillPills skills={['TypeScript', 'React', 'AWS Lambda', 'NextJS', 'Tailwind','GraphQL']} />
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <p>- &lt;Github and/or Live link&gt;</p>
-                <div className="w-full flex justify-center my-4">
-                  <div className="bg-gray-700 w-72 h-40 flex items-center justify-center text-gray-400">[Project Demo/Video/Image]</div>
+          <hr className="my-12 border-t-2 border-gray-300" />
+          
+          {/* Projects Section - Aligned with Profile */}
+          <h2 className="text-2xl font-bold mt-12 mb-4">Projects</h2>
+          <div className="flex flex-col gap-8 py-8">
+            {/* Project 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-2">🚀 Project 1 name - Dates</h3>
+                  <p className="text-gray-700 mb-4">
+                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
+                  </p>
+                  <SkillPills skills={['React', 'TypeScript', 'FastAPI', 'GraphQL', 'Serverless AWS']} />
+                  <div className="mt-4 text-gray-600">
+                    <a href="#" className="underline mr-4">GitHub Link</a>
+                    <a href="#" className="underline">Live Demo</a>
+                  </div>
+                </div>
+                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
+                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
+                    [Project Demo/Video/Image]
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Project 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-2">🤖 Project 2 name - Dates</h3>
+                  <p className="text-gray-700 mb-4">
+                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
+                  </p>
+                  <SkillPills skills={['Python', 'OpenAI LLMs', 'Web Scraping']} />
+                  <div className="mt-4 text-gray-600">
+                    <a href="#" className="underline mr-4">GitHub Link</a>
+                    <a href="#" className="underline">Live Demo</a>
+                  </div>
+                </div>
+                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
+                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
+                    [Project Demo/Video/Image]
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Blog */}
-            {/* <div className="w-1/3 ml-auto">
-              <h2 className="text-2xl font-bold mb-4">Blog</h2>
-              <div className="mb-4">
-                <h3 className="text-lg font-semibold">Blog Post title 3 - Date</h3>
-                <p>Subline + cut off preview of start</p>
+            {/* Project 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="flex flex-col md:flex-row items-start md:items-center">
+                <div className="flex-1">
+                  <h3 className="text-xl font-semibold mb-2">✨ Project 3 name - Dates</h3>
+                  <p className="text-gray-700 mb-4">
+                    A one-line project description including a use-case scenario. This section highlights the features developed, the product&apos;s purpose, and any non-technical activities like user interviews.
+                  </p>
+                  <SkillPills skills={['Node.js', 'Express.js', 'PostgreSQL']} />
+                  <div className="mt-4 text-gray-600">
+                    <a href="#" className="underline mr-4">GitHub Link</a>
+                    <a href="#" className="underline">Live Demo</a>
+                  </div>
+                </div>
+                <div className="md:ml-6 mt-4 md:mt-0 flex-shrink-0">
+                  <div className="w-full md:w-72 h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded-lg">
+                    [Project Demo/Video/Image]
+                  </div>
+                </div>
               </div>
-              <div className="mb-4">
-                <h3 className="text-lg font-semibold">Blog Post title 2 - Date</h3>
-                <p>Subline + cut off preview of start</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Blog Post title 1 - Date</h3>
-                <p>Subline + cut off preview of start</p>
-              </div>
-            </div> */}
+            </div>
           </div>
         </div>
-    </main>
+      </main>
     </div>
-
-  
   );
 }
-
