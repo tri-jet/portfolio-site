@@ -51,15 +51,6 @@ export const Card = ({
             </ul>
           )}
           
-          <SkillPills skills={skills} />
-          
-          {/* Render links only if provided */}
-          {(githubLink || liveLink) && (
-            <div className="mt-4 text-gray-600">
-              {githubLink && <a href={githubLink} className="underline mr-4">GitHub Link</a>}
-              {liveLink && <a href={liveLink} className="underline">Live Demo</a>}
-            </div>
-          )}
         </div>
         
          {/* Render the media container only if there's content to put in it */}
@@ -69,6 +60,17 @@ export const Card = ({
           </div>
         )}
       </div>
+        <div className="mt-4">
+        <SkillPills skills={skills} />
+          
+          {/* Render links only if provided */}
+          {(githubLink || liveLink) && (
+            <div className="mt-4 text-gray-600">
+              {githubLink && <a href={githubLink} className="underline mr-4">GitHub Link</a>}
+              {liveLink && <a href={liveLink} className="underline">Live Demo</a>}
+            </div>
+          )}
+        </div>
     </div>
   );
 };
