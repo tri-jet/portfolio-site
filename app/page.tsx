@@ -15,17 +15,22 @@ export default function Home() {
           {/* Profile Section */}
           <div className="flex flex-col items-center mt-12 mb-12">
             <Image
-              src="https://placehold.co/450x300/png"
+              //src="https://placehold.co/450x300/png"
+              src="/DANTE BASCO CROPPED.png"
               alt="Pic w/ personality"
-              width={450}
+              width={300}
               height={300}
-              className="rounded-[30px] mb-4"
+              className="rounded-[30px]"
             />
+            <p className="mt-2 text-xs text-gray-500 text-center w-[300px] mb-4">
+                If you know you know, I&apos;m on the right btw.
+            </p>
             <div className="w-[300px] text-center text-gray-900">
               <p>
                 Hi I&apos;m Trijit, a product-minded software engineer passionate about designing and building meaningful, user-focused applications that solve real problems.
               </p>
               <SocialLinks />
+              
             </div>
           </div>
           
