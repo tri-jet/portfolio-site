@@ -18,12 +18,12 @@ export default function Home() {
               //src="https://placehold.co/450x300/png"
               src="/DANTE BASCO CROPPED.png"
               alt="Pic w/ personality"
-              width={300}
+              width={150}
               height={300}
               className="rounded-[30px]"
             />
             <p className="mt-2 text-xs text-gray-500 text-center w-[300px] mb-4">
-                If you know you know, I&apos;m on the right btw.
+                If you know you know 🔥, I&apos;m on the right btw.
             </p>
             <div className="w-[300px] text-center text-gray-900">
               <p>
