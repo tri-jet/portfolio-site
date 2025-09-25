@@ -72,8 +72,8 @@ export default function Home() {
                 "Roadmap: interactive maps, leaderboards, photo uploads, and “Spotify Wrapped”-style insights."
               ]}
               skills={['Next.js', 'TypeScript', 'FastAPI', 'Shadcn UI', 'Tailwind', 'Supabase', 'Vercel', 'Render']}
-              githubLink="#"
-              liveLink="#"
+              //githubLink="#"
+              //liveLink="#"
               media={mediaPlaceholder}
             />
 
