@@ -97,7 +97,7 @@ export default function Home() {
               // liveLink="#"
               media={
                 <Image
-                  src="./anki-screenshot.png"
+                  src="./anki-screenshot.PNG"
                   alt="Anki screenshot"
                   width={288}
                   height={162}
