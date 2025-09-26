@@ -29,6 +29,12 @@ export default function Home() {
               <p>
                 Hi, I&apos;m Trijit, a product-minded software engineer passionate about designing and building meaningful, user-focused applications that solve real problems.
               </p>
+              <div className="mt-4 mb-6"> {/* Adds some vertical spacing */}
+                <span className="inline-block px-4 py-2 text-sm font-semibold text-gray-700 bg-white rounded-full shadow-lg">
+                  🎓 BSc Computer Science Graduate<br></br> University of Nottingham
+                </span>
+              </div>
+              <p>📍London</p>
               <SocialLinks />
               
             </div>
