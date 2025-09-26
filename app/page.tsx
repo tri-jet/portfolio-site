@@ -27,7 +27,7 @@ export default function Home() {
             </p>
             <div className="w-[300px] text-center text-gray-900">
               <p>
-                Hi I&apos;m Trijit, a product-minded software engineer passionate about designing and building meaningful, user-focused applications that solve real problems.
+                Hi, I&apos;m Trijit, a product-minded software engineer passionate about designing and building meaningful, user-focused applications that solve real problems.
               </p>
               <SocialLinks />
               
@@ -80,14 +80,23 @@ export default function Home() {
             <Card 
               title="Anki Chatbot 📝 🤖"
               subtitle="January 2025"
-
+              lines={["Anki is a flashcard tool used to study, but can often have quite a steep learning curve.",
+                "I made this tool to make Anki easier to use and learn."
+              ]}
               bulletPoints={["Created a RAG chatbot in Python that provides contextually relevant answers about the Anki flashcard tool.",
                 "Scraped and indexed documentation to create a vector database with embeddings, enabling use of cosine similarity to retrieve context relevant to the question.",
                 "Leveraged the context with OpenAI's chat completion model using prompt engineering for context-aware answer generation."]}              
               skills={['Python', 'OpenAI LLMs', 'Web Scraping']}
               // githubLink="#"
               // liveLink="#"
-              media={mediaPlaceholder}
+              media={
+                <Image
+                  src="./anki-screenshot.png"
+                  alt="Anki screenshot"
+                  width={288}
+                  height={162}
+                />
+              }
             />
 
             <Card
