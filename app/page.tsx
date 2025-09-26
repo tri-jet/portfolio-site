@@ -16,8 +16,8 @@ export default function Home() {
           <div className="flex flex-col items-center mt-12 mb-12">
             <Image
               //src="https://placehold.co/450x300/png"
-              src="/DANTE BASCO CROPPED.PNG"
-              alt="Pic w/ personality"
+              src="./DANTE BASCO CROPPED.PNG"
+              alt="Pic"
               width={150}
               height={300}
               className="rounded-[30px]"
