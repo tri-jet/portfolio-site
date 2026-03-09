@@ -47,9 +47,10 @@ export default function Home() {
               title="Digital Engineer @ Sonata Software 🎵"
               subtitle="June 2025 - Present"
               lines={[
-                "Currently working on AI proof of concept research, exploring generative and agentic AI use cases."
+                "Led AI proof-of-concept research for a London insurance client, exploring LLM use cases and API tool orchestration to automate contract building for brokers.",
+                "Contributed to client-facing C# backend and Vue (Vite + TypeScript) frontend project, rapidly onboarded onto an unfamiliar stack, supporting feature delivery across API and UI layers."
               ]}
-              skills={['TypeScript', 'Python', 'React', 'Agentic AI']}
+              skills={['TypeScript', 'Vue', 'C#', '.NET', 'PostgreSQL', 'Agentic AI','N8n']}
             />
             <Card
               title="London Accelerator Engineer @ SumUp 💰"
@@ -71,7 +72,7 @@ export default function Home() {
           <div className="flex flex-col gap-8 py-8">
             <Card 
               title="Nando's Map 🐔 🗺"
-              subtitle="July 2025 - Present"
+              subtitle="July 2025 - September 2025"
               lines={["Building a social, gamified web app for tracking visits to Nando’s restaurants."]}
               bulletPoints={[
                 "Implemented authentication, persistence, region selection and check-off features with CI/CD.",
