@@ -46,7 +46,7 @@ export default function Home() {
             <Card
               title="Digital Engineer @ Sonata Software 🎵"
               subtitle="June 2025 - Present"
-              lines={[
+              bulletPoints={[
                 "Led AI proof-of-concept research for a London insurance client, exploring LLM use cases and API tool orchestration to automate contract building for brokers.",
                 "Contributed to client-facing C# backend and Vue (Vite + TypeScript) frontend project, rapidly onboarded onto an unfamiliar stack, supporting feature delivery across API and UI layers."
               ]}
