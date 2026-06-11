@@ -45,7 +45,7 @@ export default function Home() {
           <div className="flex flex-col gap-8 py-8">
             <Card
               title="Digital Engineer @ Sonata Software 🎵"
-              subtitle="June 2025 - Present"
+              subtitle="June 2025 - June 2026"
               bulletPoints={[
                 "Led AI proof-of-concept research for a London insurance client, exploring LLM use cases and API tool orchestration to automate contract building for brokers.",
                 "Contributed to client-facing C# backend and Vue (Vite + TypeScript) frontend project, rapidly onboarded onto an unfamiliar stack, supporting feature delivery across API and UI layers."
